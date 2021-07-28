@@ -28,8 +28,11 @@
           <div class="col-2 d-flex justify-content-center align-items-center">
             <i class="fas fa-angle-right fa-3x" @click="toRightIndex"></i>
           </div>
-          <div class="col d-flex justify-content-center align-items-start">
-            <button>Slideshow</button>
+          <div class="col-6 d-flex justify-content-center align-items-start">
+            <button @click="startInterval">Slideshow</button>
+          </div>
+          <div class="col-6 d-flex justify-content-center align-items-start">
+            <button @click="stopInterval">Stop</button>
           </div>
         </div>
       </div>

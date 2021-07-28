@@ -5,6 +5,7 @@ const app = new Vue({
   data: {
     currentIndex: 0,
     images: ['images/image1.jpg', 'images/image2.jpg', 'images/image3.jpg', 'images/image4.jpg'],
+    slideshow: '',    // Bonus
   },
   methods: {
     isActive(index) {
@@ -27,5 +28,12 @@ const app = new Vue({
     setCurrentIndex(index) {
       this.currentIndex = index;
     },
+    // Bonus
+    startInterval() {
+      this.slideshow = setInterval((this.toRightIndex), 3000);
+    },
+    stopInterval() {
+      clearInterval(this.slideshow);
+    }
   },
 });
