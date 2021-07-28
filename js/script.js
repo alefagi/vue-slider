@@ -26,6 +26,6 @@ const app = new Vue({
     },
     setCurrentIndex(index) {
       this.currentIndex = index;
-    }
+    },
   },
 });
